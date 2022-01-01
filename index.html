@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gaming website page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/profile-picture.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Game Controllers</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li><a href="#">Media Remotes</a></li>
+                    <li><a href="#">Others</a></li>
+
+                </ul>
+            </nav>
+            <img src="https://img.icons8.com/ios-filled/50/000000/menu--v4.png" class="menu-icon" onclick="togglemenu()"/>
+        </div>
+        <div class="row">
+            <div class="col-1"> 
+            <h2>PS5 V1<br>Dualshock 5</h2>    
+            <h3>Wireless Control For PlayStation 5</h3>
+            <p>(Compatible/Generic)</p>
+            <h4>$32.50</h4>
+            <br><button type="button">Buy Now<img src="images/rrow.png">
+            </button>
+            </div>
+            <div class="col-2"> 
+                <img src="images/ps5.png"  class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                <img src="https://img.icons8.com/pastel-glyph/64/000000/add.png"/>
+                <p><small>Add to Cart</small></p>
+                </div>
+                </div>
+                
+        </div>
+        <div class="social-links">
+            <img src="https://img.icons8.com/ios/50/000000/facebook-new.png"/>               
+            <img src="https://img.icons8.com/ios/50/000000/twitter--v1.png"/>
+            <img src="https://img.icons8.com/ios/50/000000/instagram-new--v2.png"/>             
+           </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+
+           else 
+        {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+    </script>
+</body>
+</html>
